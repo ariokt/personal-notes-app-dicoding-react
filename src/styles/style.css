@@ -1,0 +1,146 @@
+:root {
+  --background-color: #DDDDDD;
+  --font-color: #141414;
+  --border-color: #141414;
+}
+
+[data-theme='light'] {
+  --background-color: #DDDDDD;
+  --font-color: #141414;
+  --border-color: #141414;
+}
+
+[data-theme='dark'] {
+  --background-color: #141414;
+  --font-color: #ffff;
+  --border-color: #ffffff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color) !important;
+  color: var(--font-color) !important;
+}
+
+input {
+  background-color: white !important;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+  margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+.notes-app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.notes-app__header {
+  display: flex;
+  align-items: center;
+  padding: 32px 0;
+}
+
+.notes-app__header-button {
+  border: 2px dashed green;
+  color: #141414;
+  text-decoration: none;
+}
+ 
+.notes-app__header h1 {
+  font-weight: normal;
+  font-size: 32px;
+}
+
+.notes-list {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.note-item {
+  display: flex;
+  flex-direction: column;
+  border: 2px dashed var(--border-color);
+  padding: 16px;
+  border-radius: 8px;
+  color: var(--font-color);
+  text-decoration: none;
+}
+
+.note-item a {
+  color: var(--font-color);
+}
+
+.note-input {
+  border: 2px dashed var(--border-color);
+  padding: 16px;
+  margin: 14px 0;
+  border-radius: 8px;
+  margin-bottom: 32px;
+}
+ 
+.note-input input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  font-family: 'Inter', sans-serif;
+}
+ 
+.note-input button {
+  width: 100%;
+  padding: 8px;
+  font-family: 'Inter', sans-serif;
+  border: none;
+}
+
+.login-page, .register-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.login-page h2, .register-page h2 {
+  font-weight: normal;
+}
+
+.login-input, .register-input {
+  margin-top: 16px;
+  width: 100%;
+}
+
+.login-input input, .register-input input {
+  display: block;
+  padding: 16px;
+  width: 100%;
+  margin: 8px 0;
+  font-size: 24px;
+  background-color: var(--background-color);
+  border: 2px dashed var(--border-color);
+  border-radius: 8px;
+}
+
+.login-input button, .register-input button {
+  display: block;
+  width: 100%;
+  padding: 16px;
+  font-size: 24px;
+  background-color: tan;
+  border: 2px dashed var(--border-color);
+  border-radius: 8px;
+  margin: 16px 0;
+}
